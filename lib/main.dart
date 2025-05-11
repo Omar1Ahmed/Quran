@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:quran/Core/helper/localDatabase/localDataBase_Service.dart';
 import 'package:quran/Features/home/View/home_page_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SQLiteService().init();
   runApp(const MyApp());
 }
 
